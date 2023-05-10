@@ -24,5 +24,6 @@ Bot?: ${ctx.from?.is_bot}`);
 console.log(`UserName: ${ctx.from?.username} ,id: ${ctx.chat.id}`);
 });
 
+console.log("bot is starting...");
 console.log("bot started");
 bot.start();
