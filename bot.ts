@@ -8,6 +8,12 @@ if (typeof BOT_TOKEN === "undefined")
   throw new Error("BOT_TOKEN is not defined")
 const bot = new Bot(BOT_TOKEN); 
 
+bot.command("start", async (ctx) => {
+  await ctx.reply(`M3 info bot 
+  type /info to see you info
+  type /test to chek if the bot is working`);
+});
+
 bot.command("test", async (ctx) => {
   await ctx.reply("Everything is Alright!", {
     reply_to_message_id: ctx.msg.message_id,
